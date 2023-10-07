@@ -3,13 +3,13 @@ import List from "./List";
 import data from "./data";
 
 const App = () => {
-  const [people, setPeople] = useState(data);
+  const [log, setLog] = useState(data);
   return (
     <main>
       <section className="container">
-        <h3>{people.length} birthdays today</h3>
-        <List people={people} />
-        <button onClick={() => setPeople([])}>Clear All</button>
+        <h3>{log.length} birthdays today</h3>
+        <List log={log} />
+        <button onClick={() => setLog([])}>Clear All</button>
       </section>
     </main>
   );

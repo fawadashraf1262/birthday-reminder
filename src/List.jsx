@@ -1,9 +1,9 @@
 import React from "react";
 
-const List = ({ people }) => {
+const List = ({ log }) => {
   return (
     <div>
-      {people.map((person, id) => {
+      {log.map((person, id) => {
         return (
           <article key={id} className="person">
             <img src={person.image} alt={person.name} />
